@@ -1,21 +1,18 @@
 # Pdg
 
-**TODO: Add description**
+Inspired by https://github.com/PureWriter/proguard-dict
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `pdg` to your list of dependencies in `mix.exs`:
+1. Download pdg, put it where you want to generate random proguard dictionary file or your any bin folder
+2. Just run it
+  2.1 run `pdg`
+  2.2 use `./pdg` if not put in bin path
 
-```elixir
-def deps do
-  [
-    {:pdg, "~> 0.1.0"}
-  ]
-end
-```
+## Command line args
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/pdg](https://hexdocs.pm/pdg).
+1. --name or -n for file name (default proguard-dictionary.txt)
+2. --from or -f for start length (default 6)
+3. --to or -t for end length (default 30)
 
+Example: `pdg --name halo.txt -f 7 -t 70`
