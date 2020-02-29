@@ -8,8 +8,10 @@ defmodule Pdg.CLI do
     text = generate("", "W", "w", opts) 
     |> generate("O", "0", opts) 
     |> generate("O", "o", opts) 
+    |> generate("OO", "o", opts) 
     |> generate("O", "o0", opts) 
     |> generate("I", "l", opts) 
+    |> generate("L", "l", opts) 
     |> generate("I", "1", opts) 
     |> generate("I", "1l", opts) 
     |> generate("K", "k", opts) 
@@ -19,6 +21,7 @@ defmodule Pdg.CLI do
     |> generate("M", "m", opts) 
     |> generate("C", "c", opts) 
     |> generate("Z", "z", opts) 
+    |> String.trim_trailing
     File.write(opts[:name] || "proguard-dictionary.txt", text)
     |> IO.inspect
   end
