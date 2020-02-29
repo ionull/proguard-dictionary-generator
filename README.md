@@ -6,8 +6,8 @@ Inspired by https://github.com/PureWriter/proguard-dict
 
 1. Download pdg, put it where you want to generate random proguard dictionary file or your any bin folder
 2. Just run it
-  2.1 run `pdg`
-  2.2 use `./pdg` if not put in bin path
+    * run `pdg`
+    * use `./pdg` if not put in bin path
 
 ## Command line args
 
